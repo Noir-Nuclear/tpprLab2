@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.chart.ScatterChart?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<GridPane alignment="center" hgap="10" prefHeight="556.0" prefWidth="640.0" stylesheets="@../css/styles.css" vgap="10" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller">
+    <columnConstraints>
+        <ColumnConstraints />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints />
+    </rowConstraints>
+    <AnchorPane prefHeight="566.0" prefWidth="653.0">
+      <ScatterChart fx:id="graphic" layoutX="14.0" layoutY="14.0" prefHeight="398.0" prefWidth="454.0">
+        <xAxis>
+          <NumberAxis side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis side="LEFT" />
+        </yAxis>
+      </ScatterChart>
+        <Button fx:id="refreshChart" layoutX="523.0" layoutY="48.0" mnemonicParsing="false" text="do ut" />
+      <GridPane layoutX="41.0" layoutY="408.0" prefHeight="117.0" prefWidth="298.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="58.40001220703125" minHeight="10.0" prefHeight="22.20001220703125" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="95.19998779296876" minHeight="10.0" prefHeight="95.19998779296876" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <TextArea fx:id="SField" prefHeight="80.0" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <TextArea fx:id="CField" prefHeight="80.0" prefWidth="150.0" GridPane.rowIndex="1" />
+            <Label prefHeight="18.0" prefWidth="112.0" text="C" textAlignment="CENTER" />
+            <Label prefHeight="18.0" prefWidth="151.0" text="S" textAlignment="CENTER" GridPane.columnIndex="1" />
+         </children>
+      </GridPane>
+      <TextField fx:id="teachError" layoutX="478.0" layoutY="421.0" />
+      <TextField fx:id="testError" layoutX="478.0" layoutY="467.0" />
+      <Label layoutX="395.0" layoutY="424.0" prefHeight="18.0" prefWidth="82.0" text="Обуч. ошибка" textAlignment="CENTER" />
+      <Label layoutX="395.0" layoutY="470.0" prefHeight="18.0" prefWidth="82.0" text="Тест. ошибка" textAlignment="CENTER" />
+    </AnchorPane>
+</GridPane>
