@@ -27,7 +27,7 @@
           <NumberAxis side="LEFT" />
         </yAxis>
       </ScatterChart>
-        <Button fx:id="refreshChart" layoutX="523.0" layoutY="48.0" mnemonicParsing="false" text="do ut" />
+        <Button fx:id="refreshChart" layoutX="523.0" layoutY="48.0" mnemonicParsing="false" text="Отрисовать график" />
       <GridPane layoutX="41.0" layoutY="408.0" prefHeight="117.0" prefWidth="298.0">
         <columnConstraints>
           <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
